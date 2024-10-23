@@ -1,0 +1,237 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /*color: #333;*/
+}
+
+/* Container */
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Header */
+header {
+    background-color: #45b7b7;
+    padding: 1rem 0;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    color: #fff;
+    display: inline-block;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: .7rem 0;
+  }
+  header .container {
+    display: block;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+header nav ul {
+    list-style: none;
+   /* float: right;*/
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/images/school.jpg') no-repeat center center/cover;
+    /*color: #fff;*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hero .container {
+  background: rgba(0,0,0,.3);
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.hero #intro {
+  position: absolute;
+  width: 100%;
+  bottom: 15vh;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero .btn {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    display: inline-block;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background: #ffb000;
+    
+}
+
+/* About Section */
+.about, .events, .contact {
+    padding: 3rem;
+    text-align: center;
+}
+
+.school {
+  text-align: center;
+  padding: 1rem 0 0 0;
+  background: #fff;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 0 0 15px 5px lightgray;
+  margin: 3rem;
+}
+
+ .school .container {
+   margin-top: .5rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 1rem;
+   color: #fff;
+ }
+ 
+ .img-con {
+   padding: 0;
+   margin: 0;
+ }
+ 
+ #classroom {
+   background: deepskyblue;
+ }
+ #field {
+   background: #2ecc71;
+ }
+ #sports {
+   background: #ffc107;
+ }
+ 
+ .img-con .img {
+   width: 100%;
+   height: auto;
+   ;
+ }
+ 
+ li {
+   list-style: none;
+   padding: .3rem;
+ }
+
+
+/* Footer */
+footer {
+    background-color: #45b7b7;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+#icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  padding: 0 20vw;
+}
+.fa {
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    
+    .hero {
+      height: 80vh;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+    .school {
+      margin: 0;
+    }
+    .school .container {
+      display: block;
+    }
+    .container .img-con {
+      padding:0 0 2rem 2rem;
+    }
+    #icons {
+      padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
